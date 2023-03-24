@@ -10,7 +10,7 @@ const pageQuizz5: HTMLElement | null = document.querySelector('.pageQuizz5');
 // Sélectionne les différents boutons
 
 const boutonStatistiques: HTMLElement | null = document.querySelector('.boutonBlanc');
-const boutonNomJoueur: HTMLElement | null = document.querySelector('.boutonGrisFoncé');
+const boutonNomJoueur: HTMLElement | null = document.querySelector('.boutonNomDuJoueur');
 const boutonCommencer: HTMLElement | null = document.querySelector('.boutonBlanc2');
 const boutonRetour: HTMLElement | null = document.querySelector('.boutonGris');
 const boutonSuivant: NodeListOf<HTMLElement> = document.querySelectorAll('.boutonSuivant');
@@ -23,7 +23,7 @@ const réponse2: NodeListOf<HTMLButtonElement> = document.querySelectorAll('.ré
 const réponse3: NodeListOf<HTMLButtonElement> = document.querySelectorAll('.réponse3');
 const réponse4: NodeListOf<HTMLButtonElement> = document.querySelectorAll('.réponse4');
 const bonneRéponse: NodeListOf<HTMLElement> = document.querySelectorAll('.bonneRéponse')
-const boutonNomJoueurStats: HTMLElement | null = document.querySelector('.blocInformations .texteBoutonGrisFoncé2 p');
+const boutonNomJoueurStats: HTMLElement | null = document.querySelector('.blocInformations .texteBoutonNomDuJoueurStats p');
 
 // Sélectionne divers elements du fichier html
 const ecranNoirQuestions: NodeListOf<HTMLElement> = document.querySelectorAll('.ecranNoirQuestions');
@@ -62,7 +62,7 @@ if (boutonNomJoueur != null && boutonNomJoueurStats != null) {
     input.type = 'text';
     input.placeholder = 'Nom du Joueur';
     input.maxLength = 12;
-    input.classList.add('boutonGrisFoncé');
+    input.classList.add('boutonNomDuJoueur');
     input.style.border = 'none';
     input.addEventListener('keydown', function (event) {
       if (event.key === 'Enter') {

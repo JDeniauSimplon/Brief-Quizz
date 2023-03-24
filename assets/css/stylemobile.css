@@ -120,7 +120,7 @@
         gap: 20px;
     }
 
-    .boutonGrisFoncé {
+    .boutonNomDuJoueur {
         width: 263px;
         height: 48px;
         background: #A7A7A7;
@@ -203,7 +203,7 @@
         padding-right: 50px;
     }
 
-    .boutonGrisFoncé2 {
+    .boutonNomDuJoueurStats {
         width: 263px;
         height: 48px;
         background: #A7A7A7;
@@ -213,7 +213,7 @@
         align-items: center;
     }
 
-    .texteBoutonGrisFoncé2 {
+    .texteBoutonNomDuJoueurStats {
         font-family: 'Itim';
         font-style: normal;
         font-weight: 400;
@@ -255,7 +255,7 @@
         padding-top: 10px;
     }
 
-    .boutonGrisFoncé3 {
+    .boutonMeilleursScores {
         width: 263px;
         height: 48px;
         background: #A7A7A7;
@@ -265,7 +265,7 @@
         align-items: center;
     }
 
-    .texteBoutonGrisFoncé3 {
+    .texteBoutonMeilleursScores {
         font-family: 'Itim';
         font-style: normal;
         font-weight: 400;
@@ -399,7 +399,7 @@
         justify-content: center;
     }
 
-    .symbole>p {
+    .symbole > p {
         font-family: 'Itim';
         font-size: 96px;
     }
@@ -443,7 +443,7 @@
         text-align: center;
     }
 
-    .bonneRéponse>p {
+    .bonneRéponse > p {
         font-family: 'Inter';
         font-style: normal;
         font-size: 22px;
@@ -470,7 +470,7 @@
         order: 3;
     }
 
-    .boutonSuivant>p {
+    .boutonSuivant > p {
         font-family: 'Itim', cursive;
         font-style: normal;
         font-weight: 400;
@@ -479,7 +479,7 @@
         color: #000000;
     }
 
-    .ecranNoirQuestions>.réponse1 {
+    .ecranNoirQuestions > .réponse1 {
         background: #FFFFFF;
         width: 284px;
         height: 60px;
@@ -490,7 +490,7 @@
         align-items: center;
     }
 
-    .ecranNoirQuestions>.réponse2 {
+    .ecranNoirQuestions > .réponse2 {
         background: #FFFFFF;
         width: 284px;
         height: 60px;
@@ -501,7 +501,7 @@
         align-items: center;
     }
 
-    .ecranNoirQuestions>.réponse3 {
+    .ecranNoirQuestions > .réponse3 {
         background: #FFFFFF;
         width: 284px;
         height: 60px;
@@ -512,7 +512,7 @@
         align-items: center;
     }
 
-    .ecranNoirQuestions>.réponse4 {
+    .ecranNoirQuestions > .réponse4 {
         background: #FFFFFF;
         width: 284px;
         height: 60px;
