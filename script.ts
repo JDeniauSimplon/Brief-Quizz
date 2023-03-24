@@ -8,7 +8,6 @@ const pageQuizz4: HTMLElement | null = document.querySelector('.pageQuizz4');
 const pageQuizz5: HTMLElement | null = document.querySelector('.pageQuizz5');
 
 // Sélectionne les différents boutons
-
 const boutonStatistiques: HTMLElement | null = document.querySelector('.boutonBlanc');
 const boutonNomJoueur: HTMLElement | null = document.querySelector('.boutonNomDuJoueur');
 const boutonCommencer: HTMLElement | null = document.querySelector('.boutonBlanc2');
@@ -16,6 +15,7 @@ const boutonRetour: HTMLElement | null = document.querySelector('.boutonGris');
 const boutonSuivant: NodeListOf<HTMLElement> = document.querySelectorAll('.boutonSuivant');
 const consolePrincipale: HTMLElement | null = document.querySelector('.consolePrincipale');
 const logoIngo: NodeListOf<HTMLElement> = document.querySelectorAll('.logoInfo');
+const boutonNomJoueurStats: HTMLElement | null = document.querySelector('.blocInformations .texteBoutonNomDuJoueurStats p');
 
 // Sélectionne les différents boutons de réponse
 const réponse1: NodeListOf<HTMLButtonElement> = document.querySelectorAll('.réponse1');
@@ -23,16 +23,14 @@ const réponse2: NodeListOf<HTMLButtonElement> = document.querySelectorAll('.ré
 const réponse3: NodeListOf<HTMLButtonElement> = document.querySelectorAll('.réponse3');
 const réponse4: NodeListOf<HTMLButtonElement> = document.querySelectorAll('.réponse4');
 const bonneRéponse: NodeListOf<HTMLElement> = document.querySelectorAll('.bonneRéponse')
-const boutonNomJoueurStats: HTMLElement | null = document.querySelector('.blocInformations .texteBoutonNomDuJoueurStats p');
 
-// Sélectionne divers elements du fichier html
+// Sélectionne divers elements du DOM
 const ecranNoirQuestions: NodeListOf<HTMLElement> = document.querySelectorAll('.ecranNoirQuestions');
 const symboleBouton: NodeListOf<HTMLElement> = document.querySelectorAll('.symbole');
 const logoInfo: NodeListOf<HTMLElement> = document.querySelectorAll('.logoInfo');
 const timer: NodeListOf<HTMLElement> = document.querySelectorAll('.countdown');
 
-// Par défaut, cache la page des statistiques et la première page du Quizz
-
+// Par défaut, cache la page des statistiques et toutes les pages du quizz
 if (pageStatistique && pageAccueil && pageQuizz1 && pageQuizz2 && pageQuizz3 && pageQuizz4 && pageQuizz5) {
   pageQuizz1.style.display = 'none';
   pageQuizz2.style.display = 'none';
@@ -69,7 +67,7 @@ if (boutonNomJoueur != null && boutonNomJoueurStats != null) {
         boutonNomJoueur.textContent = input.value;
         input.parentNode?.replaceChild(boutonNomJoueur, input);
 
-        // Changer le texte dans la balise <p>Nom du joueur:</p> dans la pageStatistique
+        // Change le texte dans la balise <p>Nom du joueur:</p> dans la pageStatistique
 
         boutonNomJoueurStats.textContent = input.value;
       }
@@ -101,12 +99,13 @@ if (boutonCommencer != null) {
     if (pageQuizz1 && pageAccueil) {
       pageQuizz1.style.display = 'flex';
       pageAccueil.style.display = 'none';
+      // reset de style des différentes pages du quizz
       resetQuizz()
     }
   });
 }
 
-// Différentes fonctions pour appliquer/reset le style des elements (il aurait été mieu de créer des classe css appropriés)
+// Différentes fonctions pour appliquer/reset le style des elements
 
 function mauvaiseReponse(
   reponseButton: HTMLButtonElement,
