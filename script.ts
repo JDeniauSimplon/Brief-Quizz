@@ -1,4 +1,4 @@
-// Sélectionne leBoutonGriss différentes pages
+// Sélectionne les différentes pages du quizz
 const pageStatistique: HTMLElement | null = document.querySelector('.pageStatistique');
 const pageAccueil: HTMLElement | null = document.querySelector('.pageAccueil');
 const pageQuizz1: HTMLElement | null = document.querySelector('.pageQuizz1');
