@@ -120,7 +120,6 @@
         outline: none;
     }
 
-
     .boutonBlanc {
         width: 220px;
         height: 56px;
@@ -274,7 +273,7 @@
         color: #000000;
     }
 
-    /* Element de la première page du quizz */
+    /* Element des pages du quizz */
 
     .boutonNoirAvecTimer {
         width: 115px;
@@ -341,7 +340,6 @@
     }
 
     .NumeroQ {
-
         width: 45px;
         height: 45px;
         background-color: black;
@@ -404,9 +402,7 @@
 
     .symbole>p {
         font-family: 'Itim';
-
         font-size: 96px;
-
     }
 
     .cadreBlancQuestions {
@@ -423,8 +419,6 @@
     .numeroQEtQuestion {
         display: flex;
     }
-
-    /* ecranNoirQuestions */
 
     .ecranNoirQuestions {
         background: #000000;
@@ -482,7 +476,7 @@
         align-items: center;
     }
 
-    /* containerWhiteQ */
+    /* réponses */
 
     .réponse1>p {
         font-family: 'Inter';
@@ -570,5 +564,4 @@
         line-height: 40px;
         color: #000000;
     }
-
 }

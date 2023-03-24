@@ -275,7 +275,7 @@
         color: #000000;
     }
 
-    /* Element de la première page du quizz */
+    /* Element des pages du quizz */
 
     .boutonNoirAvecTimer {
         width: 266px;
@@ -338,9 +338,7 @@
         justify-content: space-around;
     }
 
-
     .NumeroQ {
-
         width: 45px;
         height: 45px;
         background-color: black;
@@ -359,7 +357,6 @@
         font-size: 22px;
         line-height: 38px;
         color: #FFFFFF;
-
     }
 
     .texteQuestion {
