@@ -1,0 +1,18 @@
+/* Font importé : 'Itim' */
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+/* Propriétés CSS hors media query */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:focus {
+    outline: none;
+}

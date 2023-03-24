@@ -1,0 +1,26 @@
+/* Font importé : 'Itim' */
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+/* Affichage par défaut en dessous de 375px de large */
+
+@media screen and (min-width:0px) and (max-width:375px) {
+    .background {
+        display: none;
+    }
+
+    body {
+        background-color: #6F6649;
+    }
+
+    .boutonGris {
+        width: 136px;
+        height: 43px;
+        background: #D9D9D9;
+        border-radius: 24px;
+        display: none;
+        justify-content: center;
+        padding-left: 0px;
+    }
+}
