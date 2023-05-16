@@ -1,26 +1,32 @@
 {
-  "dependencies": {
-    "parcel": "^2.8.3"
-  },
-  "name": "i",
+  "name": "brief5",
   "version": "1.0.0",
-  "main": "index.html",
+  "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc && parcel build index.html --dist-dir dist"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JDeniauSimplon/brief-4.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/JDeniauSimplon/brief-4/issues"
+  "type": "module",
+  "dependencies": {
+    "parcel": "^2.8.3"
   },
-  "homepage": "https://github.com/JDeniauSimplon/brief-4#readme",
-  "description": "",
   "devDependencies": {
-    "typescript": "^4.9.5"
+    "@parcel/transformer-sass": "2.8.3",
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^5.1.15",
+    "postcss": "^8.4.23",
+    "postcss-preset-env": "^8.3.2",
+    "sass": "^1.62.1",
+    "typescript": "^4.0.0"
+  },
+  "parcel": {
+    "entries": {
+      "index": "index.html"
+    },
+    "outputs": {
+      "dist": "./dist"
+    }
   }
 }
